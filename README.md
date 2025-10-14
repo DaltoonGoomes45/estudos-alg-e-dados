@@ -1,10 +1,10 @@
-Sistema de Busca Otimizado para Catálogo de Produtos - MegaStore
-Descrição do Projeto
+# Sistema de Busca Otimizado para Catálogo de Produtos - MegaStore
+## Descrição do Projeto
 
 Este projeto implementa um sistema de busca e recomendação de produtos em Rust, utilizando HashMaps e grafos.
 O objetivo é otimizar a busca de produtos no catálogo da empresa MegaStore, oferecendo resultados rápidos, precisos e relevantes, além de recomendações automáticas de produtos similares.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Linguagem: Rust
 
@@ -12,7 +12,7 @@ Crates: serde, serde_json, csv
 
 Estruturas de dados: HashMap e lista de adjacência (grafo)
 
-Como Executar o Projeto
+## Como Executar o Projeto
 
 Instale o Rust:
 https://www.rust-lang.org/tools/install
@@ -22,7 +22,7 @@ Compile o projeto:
 cargo build
 
 
-Execute o sistema de busca:
+## Execute o sistema de busca:
 
 cargo run
 
@@ -30,7 +30,7 @@ cargo run
 O sistema permite que você digite o nome do produto que deseja buscar.
 Digite sair para encerrar o programa.
 
-Exemplo de execução:
+# Exemplo de execução:
 
 Digite o nome do produto (ou 'sair' para encerrar): Notebook
 
@@ -41,7 +41,7 @@ Recomendações:
 - Notebook Dell Inspiron (Categoria: Eletrônicos, Marca: Dell)
 - Smartphone Samsung (Categoria: Eletrônicos, Marca: Samsung)
 
-Testes Automatizados
+## Testes Automatizados
 
 Para rodar os testes integrados:
 
@@ -101,14 +101,14 @@ Mesa de Jantar 6 lugares
 
 Cerveja Heineken
 
-Arquitetura do Sistema
+## Arquitetura do Sistema
 Arquivo	Função
 indexer.rs	Indexa produtos usando HashMap
 search.rs	Implementa os algoritmos de busca
 recommender.rs	Gera recomendações baseadas em grafos
 system_tests.rs	Testes automatizados do sistema
 
-Estruturas de Dados e Desempenho
+## Estruturas de Dados e Desempenho
 
 HashMap: busca eficiente em tempo médio O(1)
 
