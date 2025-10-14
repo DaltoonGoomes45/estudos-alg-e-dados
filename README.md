@@ -59,7 +59,7 @@ Indexação de todos os produtos cadastrados
 ⚠️ Importante:
 Certifique-se de que o arquivo de testes (system_tests.rs) está dentro de uma pasta chamada tests/ na raiz do projeto.
 
-Exemplos de Produtos no Catálogo
+# Exemplos de Produtos no Catálogo
 
 Notebook Lenovo
 
