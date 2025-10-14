@@ -1,56 +1,79 @@
-# Sistema de Busca Otimizado para Catálogo de Produtos - MegaStore
+🛍️ Sistema de Busca Otimizado para Catálogo de Produtos - MegaStore
+📖 Descrição do Projeto
 
-## Descrição do Projeto
-Este projeto implementa um sistema de busca e recomendação de produtos em Rust, utilizando **HashMaps** e **grafos**.  
+Este projeto implementa um sistema de busca e recomendação de produtos em Rust, utilizando HashMaps e grafos.
 O objetivo é otimizar a busca de produtos no catálogo da empresa MegaStore, oferecendo resultados rápidos, precisos e relevantes, além de recomendações automáticas de produtos similares.
 
----
+🧰 Tecnologias Utilizadas
 
-## Tecnologias Utilizadas
-- Linguagem: **Rust**
-- Crates: `serde`, `serde_json`, `csv`
-- Estruturas de dados: **HashMap** e **lista de adjacência (grafo)**
+Linguagem: Rust
 
----
+Crates: serde, serde_json, csv
 
-## Como Executar
-1. Instale o Rust: [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)  
-2. Compile o projeto:
-```bash
+Estruturas de dados: HashMap e lista de adjacência (grafo)
+
+🚀 Como Executar o Projeto
+
+Instale o Rust:
+👉 https://www.rust-lang.org/tools/install
+
+Compile o projeto:
+
 cargo build
+
+
 Execute o sistema de busca:
 
-bash
-Copiar código
 cargo run
-O sistema permite que você digite o nome do produto que deseja buscar. Digite sair para encerrar.
 
-Exemplo:
 
-less
-Copiar código
+O sistema permite que você digite o nome do produto que deseja buscar.
+Digite sair para encerrar o programa.
+
+Exemplo de execução:
+
 Digite o nome do produto (ou 'sair' para encerrar): Notebook
+
 🔍 Produtos encontrados:
 - Notebook Lenovo (Categoria: Eletrônicos, Marca: Lenovo) [ID: 1]
 
 💡 Recomendações:
 - Notebook Dell Inspiron (Categoria: Eletrônicos, Marca: Dell)
 - Smartphone Samsung (Categoria: Eletrônicos, Marca: Samsung)
-Testes
-Para executar os testes automatizados:
 
-bash
-Copiar código
+🧪 Testes Automatizados
+
+Para rodar os testes integrados:
+
 cargo test
-O projeto possui testes unitários cobrindo:
+
+
+Os testes verificam:
 
 Busca de produtos por nome
 
-Recomendações baseadas na categoria do produto
+Recomendações baseadas na categoria
 
-Todos os produtos adicionados no índice
+Indexação de todos os produtos cadastrados
 
-Exemplos de Produtos Adicionados
+⚠️ Importante:
+Certifique-se de que o arquivo de testes (system_tests.rs) está dentro de uma pasta chamada tests/ na raiz do projeto.
+Estrutura recomendada:
+
+MegaStore/
+├── src/
+│   ├── main.rs
+│   ├── indexer.rs
+│   ├── search.rs
+│   ├── recommender.rs
+├── tests/
+│   └── system_tests.rs
+├── Cargo.toml
+├── Cargo.lock
+└── README.md
+
+📦 Exemplos de Produtos no Catálogo
+
 Notebook Lenovo
 
 Smartphone Samsung
@@ -91,16 +114,16 @@ Mesa de Jantar 6 lugares
 
 Cerveja Heineken
 
-Arquitetura
-indexer.rs → Indexa produtos usando HashMap
+🧩 Arquitetura do Sistema
+Arquivo	Função
+indexer.rs	Indexa produtos usando HashMap
+search.rs	Implementa os algoritmos de busca
+recommender.rs	Gera recomendações baseadas em grafos
+system_tests.rs	Testes automatizados do sistema
+⚙️ Estruturas de Dados e Desempenho
 
-search.rs → Implementa algoritmos de busca
+HashMap: busca eficiente em tempo médio O(1)
 
-recommender.rs → Gera recomendações usando grafos
+Lista de adjacência (grafo): gera recomendações de produtos similares
 
-Estruturas de Dados e Desempenho
-HashMap: busca eficiente em O(1)
-
-Lista de adjacência (grafo): recomendações de produtos similares
-
-Escalável para catálogos grandes, mantendo performance consistente
+Escalabilidade: suporta grandes catálogos mantendo desempenho estável
