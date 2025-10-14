@@ -1,10 +1,10 @@
-🛍️ Sistema de Busca Otimizado para Catálogo de Produtos - MegaStore
-📖 Descrição do Projeto
+Sistema de Busca Otimizado para Catálogo de Produtos - MegaStore
+Descrição do Projeto
 
 Este projeto implementa um sistema de busca e recomendação de produtos em Rust, utilizando HashMaps e grafos.
 O objetivo é otimizar a busca de produtos no catálogo da empresa MegaStore, oferecendo resultados rápidos, precisos e relevantes, além de recomendações automáticas de produtos similares.
 
-🧰 Tecnologias Utilizadas
+Tecnologias Utilizadas
 
 Linguagem: Rust
 
@@ -12,10 +12,10 @@ Crates: serde, serde_json, csv
 
 Estruturas de dados: HashMap e lista de adjacência (grafo)
 
-🚀 Como Executar o Projeto
+Como Executar o Projeto
 
 Instale o Rust:
-👉 https://www.rust-lang.org/tools/install
+https://www.rust-lang.org/tools/install
 
 Compile o projeto:
 
@@ -34,14 +34,14 @@ Exemplo de execução:
 
 Digite o nome do produto (ou 'sair' para encerrar): Notebook
 
-🔍 Produtos encontrados:
+Produtos encontrados:
 - Notebook Lenovo (Categoria: Eletrônicos, Marca: Lenovo) [ID: 1]
 
-💡 Recomendações:
+Recomendações:
 - Notebook Dell Inspiron (Categoria: Eletrônicos, Marca: Dell)
 - Smartphone Samsung (Categoria: Eletrônicos, Marca: Samsung)
 
-🧪 Testes Automatizados
+Testes Automatizados
 
 Para rodar os testes integrados:
 
@@ -58,21 +58,8 @@ Indexação de todos os produtos cadastrados
 
 ⚠️ Importante:
 Certifique-se de que o arquivo de testes (system_tests.rs) está dentro de uma pasta chamada tests/ na raiz do projeto.
-Estrutura recomendada:
 
-MegaStore/
-├── src/
-│   ├── main.rs
-│   ├── indexer.rs
-│   ├── search.rs
-│   ├── recommender.rs
-├── tests/
-│   └── system_tests.rs
-├── Cargo.toml
-├── Cargo.lock
-└── README.md
-
-📦 Exemplos de Produtos no Catálogo
+Exemplos de Produtos no Catálogo
 
 Notebook Lenovo
 
@@ -114,13 +101,14 @@ Mesa de Jantar 6 lugares
 
 Cerveja Heineken
 
-🧩 Arquitetura do Sistema
+Arquitetura do Sistema
 Arquivo	Função
 indexer.rs	Indexa produtos usando HashMap
 search.rs	Implementa os algoritmos de busca
 recommender.rs	Gera recomendações baseadas em grafos
 system_tests.rs	Testes automatizados do sistema
-⚙️ Estruturas de Dados e Desempenho
+
+Estruturas de Dados e Desempenho
 
 HashMap: busca eficiente em tempo médio O(1)
 
